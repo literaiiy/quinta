@@ -12,7 +12,7 @@
     <span>im</span>
   </a>
   <div class="links">
-    <a href="https://status.literaiiy.me">
+    <a href="https://status.ethany.im">
       <span>Status</span>
     </a>
     <span>|</span>
