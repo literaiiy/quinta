@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "Wriggle";
+  src: url('/src/lib/Wriggle-Regular.otf');
+}
+
 body {
   width: 100vw;
   max-width: min(90vw, 80rem);
@@ -8,7 +13,7 @@ body {
   margin: auto;
   // background-color: #fdf6e3;
   color: #073642;
-  transition: 1s ease-in-out;
+  // transition: 1s ease-in-out;
 }
 
 a {

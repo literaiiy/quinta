@@ -7,9 +7,14 @@
 </head>
 <nav class="header">
   <a class="logo" href="/">
-    <span>Ethan Y</span>
-    <span class="dot">.</span>
-    <span>im</span>
+    <span class='ethan'>ETHAN</span>
+    <span class='yim'>YIM</span>
+    <!-- <span>Ethan</span>
+    <span class="lastName">
+      <span>Y</span>
+      <span class="dot">.</span>
+      <span>im</span>
+    </span> -->
   </a>
   <div class="links">
     <a href="https://status.ethany.im">
@@ -33,6 +38,7 @@
   justify-content: center;
   align-items: center;
   padding: 1rem;
+  gap: 1rem;
 }
 
 .links {
@@ -40,19 +46,42 @@
 }
 
 .logo {
-  font-size: 5rem;
-  text-transform: lowercase;
+  font-family: "Wriggle";
+  font-size: 15rem;
+  text-transform: uppercase;
   text-decoration: none;
-  color: black;
-  font-weight: 600;
+  /* font-weight: 600; */
   font-style: italic;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  -webkit-text-stroke: 0.1875rem black;
+  text-shadow: 0.25rem 0.25rem black;
+}
+
+.ethan {
+  line-height: 12rem;
+  color: #d2f8ff;
+  font-size: 12rem;
+}
+
+.yim {
+  line-height: 3rem;
+  margin-bottom: 5rem;
+  color: rgb(255, 221, 111);
 }
 
 .logo .dot {
   color: gray !important;
 }
+
+.lastName {
+  display: flex;
+  flex-direction: row;
+}
+
 </style>
 
 <slot></slot>
