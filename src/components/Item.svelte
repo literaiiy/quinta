@@ -3,15 +3,6 @@
   export let name: string;
   export let url: string;
   export let imageUrl: string;
-
-  // const decidePos = (id: string): string => {
-  //   let style = {};
-
-  //   if (id === 'campanula') {
-  //     return "top: 0; right: 0;"
-  //   }
-
-  // }
 </script>
 
 <a 

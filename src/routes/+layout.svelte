@@ -9,22 +9,17 @@
   <a class="logo" href="/">
     <span class='ethan'>ETHAN</span>
     <span class='yim'>YIM</span>
-    <!-- <span>Ethan</span>
-    <span class="lastName">
-      <span>Y</span>
-      <span class="dot">.</span>
-      <span>im</span>
-    </span> -->
   </a>
+  <span class='tagline'>Web development if it sucked</span>
   <div class="links">
     <a href="https://status.ethany.im">
       <span>Status</span>
     </a>
-    <span>|</span>
+    <span>/</span>
     <a href="mailto:contact@ethany.im">
       <span>Contact</span>
     </a>
-    <span>|</span>
+    <span>/</span>
     <a href="https://github.com/literaiiy">
       <span>GitHub</span>
     </a>
@@ -42,12 +37,12 @@
 }
 
 .links {
-  font-family: system-ui, sans-serif;
+  /* font-family: system-ui, sans-serif; */
+  font-size: 1.5rem;
 }
 
 .logo {
-  font-family: "Wriggle";
-  font-size: 15rem;
+  font-size: 12rem;
   text-transform: uppercase;
   text-decoration: none;
   /* font-weight: 600; */
@@ -57,20 +52,26 @@
   flex-wrap: wrap;
   justify-content: center;
   text-align: center;
-  -webkit-text-stroke: 0.1875rem black;
-  text-shadow: 0.25rem 0.25rem black;
+  /* -webkit-text-stroke: 0.1875rem black; */
+  /* text-shadow: 0.25rem 0.25rem black; */
+}
+
+.tagline {
+  font-size: 2rem;
+  font-weight: 600;
 }
 
 .ethan {
-  line-height: 12rem;
-  color: #d2f8ff;
-  font-size: 12rem;
+  font-family: "Pleatures OL";
+  line-height: 10rem;
+  /* color: #d2f8ff; */
 }
 
 .yim {
-  line-height: 3rem;
-  margin-bottom: 5rem;
-  color: rgb(255, 221, 111);
+  font-family: "Pleatures";
+  line-height: 10rem;
+  /* margin-bottom: 5rem; */
+  /* color: rgb(255, 221, 111); */
 }
 
 .logo .dot {

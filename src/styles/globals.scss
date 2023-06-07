@@ -1,9 +1,25 @@
 @font-face {
-  font-family: "Wriggle";
-  src: url('/src/lib/Wriggle-Regular.otf');
+  font-family: "Pleatures OL";
+  src: url('/src/lib/Pleatures-Outline.ttf');
+}
+
+@font-face {
+  font-family: "Pleatures";
+  src: url('/src/lib/Pleatures.ttf');
+}
+
+@font-face {
+  font-family: "Vercetti";
+  src: url('/src/lib/Vercetti-Regular.ttf');
+}
+
+@font-face {
+  font-family: "Crapperton";
+  src: url('/src/lib/Crapperton2-Regular.ttf');
 }
 
 body {
+  font-family: "Crapperton", system-ui, sans-serif;
   width: 100vw;
   max-width: min(90vw, 80rem);
   margin: 0;
