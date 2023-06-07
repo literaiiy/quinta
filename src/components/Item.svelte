@@ -1,6 +1,7 @@
 <script lang='ts'>
   export let id: string;
   export let name: string;
+  export let desc: string;
   export let url: string;
   export let imageUrl: string;
 </script>
@@ -13,6 +14,7 @@
         `}
 >
   <span class="name">{name}</span>
+  <span class="desc">{desc}</span>
   <img
     src={`/images/${id}.svg`}
     alt={name}
@@ -24,23 +26,19 @@
   a {
     position: relative;
     /* border: 1px solid black; */
-    background-color: #7c4343;
     border-radius: 0.125rem;
-    height: 18rem;
-    width: 18rem;
+    height: 16rem;
+    width: 16rem;
     padding: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
     background-size: cover;
-
+    box-shadow: 0 0 0.5rem #073642ab;
   }
-
+  
   .name {
-    transition: 0.35s ease-in-out;
     position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
     padding: 0.5rem;
@@ -48,22 +46,38 @@
     border-radius: 0.125rem;
     color: white;
     font-weight: bold;
-    font-size: 3cqw;
-    text-shadow: 0 0 0.5rem black;
+    font-size: 3rem;
+    text-shadow: 0 0 0.5rem #073642;
+    text-align: center;
+    margin-top: 1rem;
+  }
+  
+  .desc {
+    display: flex;
+    transition: 0.35s ease-in-out;
+    width: 100%;
+    height: 100%;
     opacity: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    padding: 1rem;
+    color: white;
+    font-size: 1.5rem;
+    position: absolute;
+    align-items: end;
+    z-index: 500;
     &:hover {
       opacity: 1;
     }
-    z-index: 500;
   }
   
   img {
-    transition: 0.25s ease-in-out;
-    max-height: 100%;
+    max-height: calc(100% - 0rem);
     max-width: 100%;
+    margin-top: 4rem;
+    color: red;
     filter: invert(98%) sepia(1%) saturate(312%) hue-rotate(53deg) brightness(118%) contrast(90%);
     &:hover {
-      /* transform: scale(2); */
       filter: invert(98%) sepia(1%) saturate(312%) hue-rotate(53deg) brightness(200%) contrast(90%) blur(0.125rem);
     }
   }

@@ -1,32 +1,64 @@
 <script>
-  import "../styles/globals.scss"
+  import "../styles/globals.scss";
+  import { MetaTags } from 'svelte-meta-tags'
 </script>
 
 <head>
   <title>Ethan Yim</title>
+  <MetaTags
+    title="Ethan Yim"
+    titleTemplate="%s | Ethan Yim"
+    description="Crappy website"
+    canonical="https://ethany.im"
+    openGraph={{
+      url: 'https://ethany.im',
+      title: 'Ethan Yim',
+      description: 'Crappy website',
+      images: [
+        {
+          url: 'https://ethany.im/favicon.png',
+          width: 512,
+          height: 512,
+          alt: 'Ethan Yim logo',
+        },
+      ],
+      site_name: 'Ethan Yim',
+    }}
+  />
 </head>
-<nav class="header">
-  <a class="logo" href="/">
-    <span class='ethan'>ETHAN</span>
-    <span class='yim'>YIM</span>
-  </a>
-  <span class='tagline'>Web development if it sucked</span>
-  <div class="links">
-    <a href="https://status.ethany.im">
-      <span>Status</span>
+<main>
+  <nav class="header">
+    <a class="logo" href="/">
+      <span class='ethan'>ETHAN</span>
+      <span class='yim'>YIM</span>
     </a>
-    <span>/</span>
-    <a href="mailto:contact@ethany.im">
-      <span>Contact</span>
-    </a>
-    <span>/</span>
-    <a href="https://github.com/literaiiy">
-      <span>GitHub</span>
-    </a>
-  </div>
-</nav>
+    <span class='tagline'>Freeway enthusiast & developer of mediocrity</span>
+    <div class="links">
+      <a href="https://status.ethany.im">
+        <span>Status</span>
+      </a>
+      <span>/</span>
+      <a href="mailto:contact@ethany.im">
+        <span>Contact</span>
+      </a>
+      <span>/</span>
+      <a href="https://github.com/literaiiy">
+        <span>GitHub</span>
+      </a>
+    </div>
+  </nav>
+  <slot></slot>
+</main>
+<footer>
+  <span>Copyright {new Date().getFullYear()} Ethan Yim.</span>
+</footer>
+
+<!-- //// -->
 
 <style>
+  main {
+    flex: 1;
+  }
 .header {
   display: flex;
   flex-direction: column;
@@ -48,7 +80,7 @@
   /* font-weight: 600; */
   font-style: italic;
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   flex-wrap: wrap;
   justify-content: center;
   text-align: center;
@@ -83,6 +115,14 @@
   flex-direction: row;
 }
 
-</style>
+footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  & > span {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+}
 
-<slot></slot>
+</style>

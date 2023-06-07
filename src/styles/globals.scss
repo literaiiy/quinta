@@ -21,6 +21,7 @@
 body {
   font-family: "Crapperton", system-ui, sans-serif;
   width: 100vw;
+  min-height: 100vh;
   max-width: min(90vw, 80rem);
   margin: 0;
   display: flex;
