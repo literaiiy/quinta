@@ -34,7 +34,7 @@
       imageUrl: "https://plus.unsplash.com/premium_photo-1672336396196-4bddb597a379?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
     },
     {
-      id: "ca24",
+      id: "ibahm",
       name: "IBAHM",
       desc: "A free resource for SF Bay Area highways, exits, and locations",
       url: "https://ibahm.org",
@@ -64,18 +64,18 @@
   ]
 </script>
 
-<main>
+<div class='container'>
   {#each items as i}
     <ColItem id={i.id} name={i.name} url={i.url} desc={i.desc} imageUrl={i.imageUrl}/>
   {/each}
-</main>
+</div>
 
 <style lang='scss'>
-  main {
+  .container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: stretch;
     justify-content: center;
     padding: 1rem;
     gap: 1rem;

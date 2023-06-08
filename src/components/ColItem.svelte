@@ -26,7 +26,9 @@
     justify-content: space-between;
     background-color: rgba(0,0,0,0.04);
     padding: 1rem;
-    height: 15rem;
+    min-height: 15rem;
+    flex-wrap: wrap;
+    gap: 1rem;
   }
 
   .name {
@@ -34,9 +36,19 @@
     font-weight: 400;
     font-family: "Shidorton";
   }
-
+  
+  .text {
+    text-break: break-word;
+    flex: 1 1 10rem;
+  }
+  
   .icon {
+    flex: 1 2 10rem;
+    margin: auto;
+    flex-shrink: 1;
     max-width: 16rem;
+    max-height: 15rem;
+    min-width: 0;
     & svg {
       stroke-width: 1px;
       fill: red;

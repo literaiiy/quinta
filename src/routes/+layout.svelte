@@ -68,7 +68,6 @@
     main {
       width: 100%;
       box-sizing: border-box;
-      padding: 1rem;
     }
 
     main > a {
@@ -77,15 +76,17 @@
 
     .logo {
       flex-direction: column;
-      & > span {
-        font-size: min(8rem, 15vw);
-        line-height: 5rem;
-      }
+    }
+
+    .tagline {
+      // font-size: min(1rem, 7.5vw) !important;
     }
   }
 
 main {
   flex: 1;
+  margin: auto;
+  max-width: min(90vw, 80rem);
 }
 
 .header {
@@ -93,59 +94,41 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
+  padding: 1rem 0;
   gap: 1rem;
 }
 
 .links {
-  /* font-family: system-ui, sans-serif; */
-  // font-size: 1.5rem;
   text-align: center;
   font-weight: 500;
 }
 
 .logo {
-  font-size: min(12rem, 15vw);
+  font-size: min(12rem, 16vw);
   text-transform: uppercase;
   text-decoration: none;
-  /* font-weight: 600; */
   font-style: italic;
   display: flex;
-  /* flex-direction: column; */
   flex-wrap: wrap;
   justify-content: center;
   text-align: center;
-  /* -webkit-text-stroke: 0.1875rem black; */
-  /* text-shadow: 0.25rem 0.25rem black; */
 }
 
 .tagline {
   font-family: "Shidorton";
-  font-size: 2rem;
+  font-size: min(2rem, 3.5vw);
   font-weight: 400;
   text-align: center;
 }
 
 .ethan {
   font-family: "Pleatures OL";
-  line-height: 10rem;
-  /* color: #d2f8ff; */
+  line-height: min(10rem, 15vw);
 }
 
 .yim {
   font-family: "Pleatures";
-  line-height: 10rem;
-  /* margin-bottom: 5rem; */
-  /* color: rgb(255, 221, 111); */
-}
-
-.logo .dot {
-  color: gray !important;
-}
-
-.lastName {
-  display: flex;
-  flex-direction: row;
+  line-height: min(10rem, 15vw);
 }
 
 footer {
