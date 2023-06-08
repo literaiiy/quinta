@@ -43,6 +43,7 @@
   }
   
   .icon {
+    z-index: -1;
     flex: 1 2 10rem;
     margin: auto;
     flex-shrink: 1;
