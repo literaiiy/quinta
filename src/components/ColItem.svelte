@@ -17,7 +17,7 @@
   >
 </a>
 
-<style>
+<style lang='scss'>
   .item {
     /* width:100%; */
     display: flex;
@@ -50,10 +50,8 @@
     max-width: 16rem;
     max-height: 15rem;
     min-width: 0;
-    & svg {
-      stroke-width: 1px;
-      fill: red;
-    }
+    filter: invert(18%) sepia(30%) saturate(1145%) hue-rotate(145deg) brightness(93%) contrast(99%);
   }
+
 
 </style>
