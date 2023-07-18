@@ -28,8 +28,8 @@
 <main>
   <nav class="header">
     <a class="logo" href="/">
-      <span class='ethan'>ETHAN</span>
-      <span class='yim'>YIM</span>
+      <span class='ethan'>ethan</span>
+      <span class='yim'>Yim</span>
     </a>
     <span class='tagline'>Freeway enthusiast, Bay Area native, & professional React hater</span>
   </nav>
@@ -104,8 +104,8 @@ main {
 }
 
 .logo {
-  font-size: min(12rem, 16vw);
-  text-transform: uppercase;
+  font-size: min(8rem, 10vw);
+  // text-transform: lowercase;
   text-decoration: none;
   font-style: italic;
   display: flex;
@@ -115,19 +115,19 @@ main {
 }
 
 .tagline {
-  font-family: "Shidorton";
+  font-family: system-ui;
   font-size: min(2rem, 3.5vw);
   font-weight: 400;
   text-align: center;
 }
 
 .ethan {
-  font-family: "Pleatures OL";
+  font-family: "Tamoro";
   line-height: min(10rem, 15vw);
 }
 
 .yim {
-  font-family: "Pleatures";
+  font-family: "Tamoro";
   line-height: min(10rem, 15vw);
 }
 

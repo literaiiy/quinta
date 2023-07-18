@@ -32,9 +32,11 @@
   }
 
   .name {
-    font-size: 1.5rem;
+    font-size: 2rem;
+    line-height: 3rem;
     font-weight: 400;
-    font-family: "Shidorton";
+    margin: 0;
+    font-family: "Youth Action";
   }
   
   .text {
