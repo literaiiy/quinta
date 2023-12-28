@@ -1,31 +1,24 @@
-// @font-face {
-//   font-family: "Pleatures OL";
-//   src: url('/src/lib/Pleatures-Outline.ttf');
-// }
-
-// @font-face {
-//   font-family: "Pleatures";
-//   src: url('/src/lib/Pleatures.ttf');
-// }
-
 @font-face {
-  font-family: "Vercetti";
-  src: url('/src/lib/Vercetti-Regular.ttf');
+  font-family: "Nagbuloe-SB";
+  src: url('/src/lib/Nagbuloe-SB.otf');
 }
 
 @font-face {
-  font-family: "Youth Action";
-  src: url('/src/lib/YouthAction.ttf');
+  font-family: "Nagbuloe";
+  src: url('/src/lib/Nagbuloe.otf');
 }
 
 @font-face {
-  font-family: "Tamoro";
-  src: url('/src/lib/Tamoro.ttf');
+  font-family: "Castoro";
+  src: url('/src/lib/Castoro.ttf');
+  font-weight: 400;
 }
 
 @font-face {
-  font-family: "Shidorton";
-  src: url('/src/lib/Shidorton-Regular.ttf');
+  font-family: "Castoro";
+  src: url('/src/lib/Castoro-Italic.ttf');
+  font-weight: 400;
+  font-style: italic;
 }
 
 html {
@@ -35,17 +28,15 @@ html {
 
 body {
   margin: 0;
-  font-family: system-ui, sans-serif;
+  font-family: Castoro, system-ui, sans-serif;
   width: 100%;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  // background-color: #fdf6e3;
-  color: #073642;
-  // transition: 1s ease-in-out;
+  background-image: url('/images/i-like-food.svg');
   background-color: #f3f3f3;
-  background-image: url('/images/bg.svg');
+  color: #292F36;
 }
 
 a {

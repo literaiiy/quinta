@@ -34,7 +34,7 @@
     justify-content: center;
     align-items: center;
     background-size: cover;
-    box-shadow: 0 0 0.5rem #073642ab;
+    box-shadow: 0 0 0.5rem #023C40;
   }
   
   .name {
@@ -47,7 +47,7 @@
     color: white;
     font-weight: bold;
     font-size: 3rem;
-    text-shadow: 0 0 0.5rem #073642;
+    text-shadow: 0 0 0.5rem #023C40;
     text-align: center;
     margin-top: 1rem;
   }

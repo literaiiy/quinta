@@ -29,7 +29,7 @@
     {
       id: "dahlia",
       name: "dah.li/a",
-      desc: "My rarely-contributed-to personal blog",
+      desc: "Personal blog",
       url: "https://dah.li/a",
       imageUrl: "https://plus.unsplash.com/premium_photo-1672336396196-4bddb597a379?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
     },
@@ -40,13 +40,13 @@
       url: "https://ibahm.org",
       imageUrl: "https://live.staticflickr.com/8472/8098468925_e2ecd56065_b.jpg"
     },
-    {
-      id: "tiramisu",
-      name: "tiramisu",
-      desc: "Old Hypixel player stats site",
-      url: "https://tiramisu.vip",
-      imageUrl: "https://i.ibb.co/JtSvgvk/2020-07-09-12-04-02-2021-02-07-02-44-48-UTC.png" 
-    },
+    // {
+    //   id: "tiramisu",
+    //   name: "tiramisu",
+    //   desc: "Old Hypixel player stats site",
+    //   url: "https://tiramisu.vip",
+    //   imageUrl: "https://i.ibb.co/JtSvgvk/2020-07-09-12-04-02-2021-02-07-02-44-48-UTC.png" 
+    // },
     {
       id: "toolbox",
       name: "literaiiy Toolbox",
@@ -64,14 +64,24 @@
   ]
 </script>
 
-<div class='container'>
-  {#each items as i}
-    <ColItem id={i.id} name={i.name} url={i.url} desc={i.desc} imageUrl={i.imageUrl}/>
-  {/each}
-</div>
+<section>
+  <div class='container'>
+    {#each items as i}
+      <ColItem id={i.id} name={i.name} url={i.url} desc={i.desc} imageUrl={i.imageUrl}/>
+    {/each}
+  </div>
+</section>
+
 
 <style lang='scss'>
-  .container {
+  section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  div.container {
+    max-width: min(95vw, 960px);
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
