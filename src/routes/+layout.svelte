@@ -49,10 +49,10 @@
       </a>
       <span class='tagline'>Transit enthusiast <b>&</b> hobbyist web developer</span>
     </div>
-    <div class="scroll-indicator">
+    <a href="#projects" class="scroll-indicator">
       <span>scroll...</span>
       <span>▼</span>
-    </div>
+    </a>
   </section>
   <slot></slot>
 </main>
@@ -91,6 +91,7 @@
   }
 
   nav {
+    z-index: 150;
     width: 100%;
     position: fixed;
     display: flex;
@@ -98,10 +99,10 @@
     justify-content: space-between;
     align-items: center;
     padding: 1rem 1rem;
-    // height: 3rem;
+    background-color: #f3f3f3;
+    box-shadow: 0 1rem 1rem #f3f3f3;
     box-sizing: border-box;
     & > .nav-left {
-      // font-style: italic;
       font-weight: 600;
       display: flex;
       flex-direction: row;
@@ -113,7 +114,6 @@
       }
     }
     & > .nav-right {
-      // margin-left: auto;
       & > a.nav-contact {
         background-color: $main-color;
         color: $near-white;
@@ -178,7 +178,7 @@
     text-align: center;
   }
   
-  .scroll-indicator {
+  a.scroll-indicator {
     display: flex;
     flex-direction: column;
     justify-content: center;

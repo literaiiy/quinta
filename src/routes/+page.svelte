@@ -65,6 +65,7 @@
 </script>
 
 <section>
+  <h2 id="projects">Stuff I've made</h2>
   <div class='container'>
     {#each items as i}
       <ColItem id={i.id} name={i.name} url={i.url} desc={i.desc} imageUrl={i.imageUrl}/>
@@ -78,6 +79,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    padding: 8rem 0 0 0;
   }
 
   div.container {
