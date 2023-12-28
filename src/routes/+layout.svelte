@@ -30,7 +30,7 @@
     <div class="nav-left">
       <a href="https://status.ethany.im">Status</a>
       <a href="https://github.com/literaiiy">
-        <img src="/src/lib/github-mark.svg" alt="GitHub logo">
+        <img src="/images/github-mark.svg" alt="GitHub logo">
       </a>
     </div>
     <div class="nav-right">
