@@ -12,13 +12,13 @@
     openGraph={{
       url: 'https://ethany.im',
       title: 'Ethan Yim',
-      description: 'Crappy website',
+      description: 'Transit enthusiast & hobbyist web developer.',
       images: [
         {
-          url: 'https://ethany.im/favicon.png',
-          width: 512,
-          height: 512,
-          alt: 'Ethan Yim logo',
+          url: 'https://ethany.im/og-screenshot.png',
+          width: 1280,
+          height: 720,
+          alt: 'homepage screenshot',
         },
       ],
       site_name: 'Ethan Yim',
